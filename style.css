@@ -1,0 +1,53 @@
+body{
+    background-color: #ddd;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul{ 
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 22rem
+}
+
+li{
+    font-weight: 700;
+}
+
+p{
+    font-size:25px;
+}
+
+#whoiam{
+    font-size: 50px;
+    ;
+}
+
+.photo{
+    float: right;
+    width: 600px;
+    height: 300px;
+    border: 1px solid silver;
+    background-image: url(1.jpg);
+    animation-name: gallery;
+    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gallery{
+    20%{background-image: url(2.jpg);}
+    40%{background-image: url(3.jpg);}
+    60%{background-image: url(4.jpg);}
+    80%{background-image: url(5.jpg);}
+}
+
+
+.me{
+    float: right;
+}
